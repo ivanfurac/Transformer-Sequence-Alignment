@@ -1,0 +1,4 @@
+data/alignments_200_gap5_100000 filter=lfs diff=lfs merge=lfs -text
+data/hemoglobin.fasta filter=lfs diff=lfs merge=lfs -text
+trained_models/100_l3h8d128/model.ckpt.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+trained_models/spaces_l3h8d128/model.ckpt.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text

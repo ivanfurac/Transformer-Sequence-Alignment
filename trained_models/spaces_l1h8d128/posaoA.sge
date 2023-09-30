@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#$ -N spacesA
+#$ -cwd
+#$ -o spacesA.out
+#$ -e spacesA.err
+#$ -M ivan.furac@fer.hr
+#$ -m abe
+#$ -pe gpu 1
+
+module load tensorflow/2-12-0
+cuda-wrapper.sh python3 train_spaces_A.py
