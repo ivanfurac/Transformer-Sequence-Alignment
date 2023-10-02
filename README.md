@@ -1,5 +1,5 @@
 # Transformer-based sequence alignment
-This project was my master thesis at the Faculty of Electrical Engineering and Computing in Zagreb. It connects the areas of machine learning, natural language processing, and bioinformatics and deals with the use of transformer models for pairwise protein sequence alignment. Complete thesis written in Croatian can be found in the repository. The idea for the thesis came from a paper that was published in early 2023 (Dotan et al., Multiple sequence alignment as a sequence-to-sequence learning problem), where a similar transformer-based solution was proposed.
+This project was my master thesis at the Faculty of Electrical Engineering and Computing in Zagreb. It connects the areas of machine learning, natural language processing, and bioinformatics and deals with the use of transformer models for pairwise protein sequence alignment. Complete thesis written in Croatian can be found in the repository as a PDF file. The idea for the thesis came from a paper that was published in early 2023 (Dotan et al., Multiple sequence alignment as a sequence-to-sequence learning problem), where a similar transformer-based solution was proposed.
 
 ## Project Overview
 ### Protein Sequence Alignment
