@@ -24,10 +24,18 @@ The transformer architecture was first introduced in 2017 and proved to be very 
 ![image](https://github.com/ivanfurac/Transformer-Sequence-Alignment/assets/73389887/83181a1c-40d3-4d95-a58b-f50bbd76e498)
 
 ### Implementation and Dataset
-An implementation of a transformer model was written using TensorFlow and Keras frameworks. For model training and testing, a dataset consisting of 100,000 protein sequence pairs was prepared. This dataset is part of a larger dataset, which is open source and can be downloaded from the NCBI website. Reference alignments, which the model learns to produce, were obtained using the Needleman-Wunsch algorithm.
+An implementation of a transformer model was written using TensorFlow and Keras frameworks. For model training and testing, a dataset consisting of 100,000 protein sequence pairs was prepared. This dataset is part of a larger dataset, which is open source and can be downloaded from the NCBI website, but it can be also found in the repository. Reference alignments, which the model learns to produce, were obtained using the Needleman-Wunsch algorithm.
 
 ### Results and Future Work
 
 Different model architectures were compared, as well as different ways of representing unaligned and aligned sequences for a machine learning task. The results showed that even simpler architectures with fewer parameters than the original transformer architecture proposed by Vaswani et al. can achieve good results. The models were able to generate meaningful alignments, but the alignments generated were often suboptimal. Another major setback was the time needed for model training to finish, which lasted a few days for more complex architectures. The column score of the best model (percentage of columns in generated alignment equal to columns in the reference alignment) achieved on the test set was 70%. Possible future work should deal with further reduction of the model complexity and an increase in the quality of the generated alignments. A possible solution could be an ensemble of simpler transformer models, as proposed by Dotan et al. in their paper.
 
 ## Repository and Usage
+
+In the repository you can find the following folders:
+* **data**: Contains datasets used for model training and testing.
+* **scripts**: Contains scripts used for data preprocessing, as well as the main train and test scripts (train and test loops). There are some additional helping scripts, such as the script that generates the BLOSUM62 matrix used for alignment scoring or the script that generates the transformer input and output dictionary (a list of all tokens that a transformer model can expect on its input or output).
+* **trained_models**: Contains six best models (model checkpoints). The models differ in the language they use for output sequences (spaces and pairs) and architecture hyperparameters (number of encoder/decoder blocks, which is 1, 2, or 3).
+* **transformer**: Contains the base code for a transformer and all of its components.
+* **vocabulary**: Contains vocabularies for input and output languages (one input language, spaces_input, and two output languages, spaces_output and pairs_output) used in this project. 
+
