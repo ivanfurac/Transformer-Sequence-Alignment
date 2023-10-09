@@ -35,5 +35,7 @@ Different model architectures were compared, as well as different ways of repres
 In the repository you can find the following folders:
 * **data**: Contains datasets used for model training and testing.
 * **scripts**: Contains scripts used for data preprocessing, as well as the main train and test scripts (train and test loops). There are some additional helping scripts, such as the script that generates the BLOSUM62 matrix used for alignment scoring or the script that generates the transformer input and output dictionary (a list of all tokens that a transformer model can expect on its input or output).
-* **trained_models**: Contains 6 best models (model checkpoints). The models differ in the language they use for output sequences (spaces and pairs) and architecture hyperparameters (number of encoder/decoder blocks, which is 1, 2, or 3).
+* **trained_models**: Contains six best models (model checkpoints). The models differ in the language they use for output sequences (spaces and pairs) and architecture hyperparameters (number of encoder/decoder blocks, which is 1, 2, or 3).
+* **transformer**: Contains the base code for a transformer and all of its components.
+* **vocabulary**: Contains vocabularies for input and output languages (one input language, spaces_input, and two output languages, spaces_output and pairs_output) used in this project. 
 
