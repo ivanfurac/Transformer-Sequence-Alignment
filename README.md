@@ -32,10 +32,16 @@ Different model architectures were compared, as well as different ways of repres
 
 ## Repository and Usage
 
-In the repository you can find the following folders:
+In the repository you can find the following directories:
 * **data**: Contains datasets used for model training and testing.
 * **scripts**: Contains scripts used for data preprocessing, as well as the main train and test scripts (train and test loops). There are some additional helping scripts, such as the script that generates the BLOSUM62 matrix used for alignment scoring or the script that generates the transformer input and output dictionary (a list of all tokens that a transformer model can expect on its input or output).
 * **trained_models**: Contains six best models (model checkpoints). The models differ in the language they use for output sequences (spaces and pairs) and architecture hyperparameters (number of encoder/decoder blocks, which is 1, 2, or 3).
-* **transformer**: Contains the base code for a transformer and all of its components.
-* **vocabulary**: Contains vocabularies for input and output languages (one input language, spaces_input, and two output languages, spaces_output and pairs_output) used in this project. 
+* **transformer**: Contains the base code for a transformer model, and all of its components.
+* **vocabulary**: Contains vocabularies for input and output languages (one input language, spaces_input, and two output languages, spaces_output and pairs_output) used in this project.
+
+You can use the code in the transformer directory to initialize your own model, and then use the `train.py` script in the scripts/training directory to train the model. You can also import the models from the trained_models directory and check their performance on your custom datasets or the testing datasets given in the data directory. To use the code, check the required Python libraries in the `requirements.txt` file. All those libraries can be simply installed with the following command:
+
+```
+pip install -r requirements.txt
+```
 
