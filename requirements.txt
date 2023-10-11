@@ -1,0 +1,4 @@
+biopython==1.81
+numpy==1.23.1
+tensorflow==2.10.1
+keras-nlp==0.4.1
