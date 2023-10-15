@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-FF0000?style=for-the-badge&logo=keras&logoColor=white)
+
 # Transformer-based sequence alignment
 This project was my master thesis at the Faculty of Electrical Engineering and Computing in Zagreb. It connects the areas of machine learning, natural language processing, and bioinformatics and deals with the use of transformer models for pairwise protein sequence alignment. Complete thesis written in Croatian can be found in the repository as a PDF file. The idea for the thesis came from a paper that was published in early 2023 (Dotan et al., Multiple sequence alignment as a sequence-to-sequence learning problem), where a similar transformer-based solution was proposed.
 
